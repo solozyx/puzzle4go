@@ -11,17 +11,20 @@ import "fmt"
 //	fmt.Println(sum)
 //}
 //则Add函数定义正确的是（）
+
 //A.
 //
 //type Integer int
 //func (a Integer) Add(b Integer) Integer {
 //	return a + b
 //}
+
 //B.
 //type Integer int
 //func (a Integer) Add(b *Integer) Integer {
 //	return a + *b
 //}
+
 //C.
 //
 //type Integer int
@@ -42,9 +45,9 @@ import "fmt"
 //而且add方法，可以是struct和它的指针类型调用，所以AC是可以的
 
 func main() {
-		var a Integer = 1
-		var b Integer = 2
-		var i interface{} = &a
-		sum := i.(*Integer).Add(b)
-		fmt.Println(sum)
+	var a Integer = 1
+	var b Integer = 2
+	var i interface{} = &a
+	sum := i.(*Integer).Add(b)
+	fmt.Println(sum)
 }

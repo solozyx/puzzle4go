@@ -24,28 +24,29 @@ type Human struct {
 	Name string
 }
 
-func (h Human) DoWork()  {
-	fmt.Println(h.Name+" 工作...")
+func (h Human) DoWork() {
+	fmt.Println(h.Name + " 工作...")
 }
 
 type Person struct {
 	Name string
 }
 
-func (p Person) DoWork()  {
-	fmt.Println(p.Name+"是富二代，无需工作。")
+func (p Person) DoWork() {
+	fmt.Println(p.Name + "是富二代，无需工作。")
 }
 
-func (p Person) Happy()  {
-	fmt.Println(p.Name+"在玩")
+func (p Person) Happy() {
+	fmt.Println(p.Name + "在玩")
 }
 
 func main() {
 	var father Father
 	var son Son
-	father =Human{Name: "老王"}
+	father = Human{Name: "老王"}
 
-
+	// Cannot use 'father' (type Father) as type Son Type
+	// does not implement 'Son' as some methods are missing: Happy()
 	son = father
 
 	fmt.Println(son)

@@ -1,7 +1,7 @@
 package main
 
 //[intermediate] 关于函数返回值的错误设计，下面说法正确的是（）
-//A. 如果失败原因只有一个，则返回bool
+//A. 如果失败原因只有一个，则返回bool      [也可以把失败error返回]
 //B. 如果失败原因超过一个，则返回error
 //C. 如果没有失败原因，则不返回bool或error
 //D. 如果重试几次可以避免失败，则不要立即返回bool或error

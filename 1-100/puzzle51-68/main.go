@@ -31,6 +31,7 @@ package main
 //for i := 0; i < 5; i++ {
 //defer fmt.Printf("%d ", i)
 //}
+//defer压栈先进后出
 //参考答案：4 3 2 1 0
 //
 //61 [intermediate] 下面的程序的运行结果是__________
@@ -65,6 +66,7 @@ package main
 //		fmt.Print(v)
 //	}
 //}
+// for-range只写1个 是索引
 //参考答案：012
 //
 //64 [intermediate] 下面的程序的运行结果是__________
@@ -116,6 +118,7 @@ package main
 //	s.Add(3)
 //}
 //参考答案：132
+// 先执行 s.Add(1) 然后执行 s.Add(3) defer作用的是 Add(2)
 
 func main() {
 
