@@ -9,12 +9,10 @@ import "fmt"
 //D. var x error = nil
 //参考答案：BD
 
-
-
 func main() {
-	//var x = nil
+	//var x = nil  Cannot assign nil without explicit type
 	//var x interface{} = nil
-	//var x string = nil
+	//var x string = nil Cannot use 'nil' as type string
 	var x error = nil
 
 	//A 不能用nil给一个没有类型的变量

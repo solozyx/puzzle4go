@@ -11,11 +11,13 @@ import "fmt"
 
 //B go语言人家有false,这个1是什么鬼
 //C int 到 bool 不能这么转啊，老铁
+
 var b bool
+
 func main() {
 	//b = true
 	//b = 1
-	//b = bool(1)
+	//b = bool(1)   Cannot convert expression of type 'int' to type 'bool'
 	//b = (1 == 2)
 	fmt.Println(b)
 }

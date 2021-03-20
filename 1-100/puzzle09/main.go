@@ -1,5 +1,6 @@
 package main
-import "C"
+
+//import "C"
 
 //[intermediate] 对于函数定义：
 //
@@ -14,7 +15,7 @@ import "C"
 //A. add(1, 2)
 //B. add(1, 3, 7)
 //C. add([]int{1, 2})
-//D. add([]int{1, 3, 7}...)
+//D. add([]int{1, 3, 7}...)  语法...把int切片解析出3个数 等价于B
 //参考答案：ABD
 
 func main() {

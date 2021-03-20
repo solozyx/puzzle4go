@@ -8,7 +8,7 @@ package main
 //参考答案：BD
 
 //A 必须滴？ 是不是这种答案直接否定了，想想，也是
-//C break?  什么鬼，是不是记乱了？
+//C break?  什么鬼，是不是记乱了？ Go可以不用break
 func main() {
 
 }

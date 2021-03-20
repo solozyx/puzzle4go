@@ -10,25 +10,25 @@ import "fmt"
 //
 //参考答案：CD
 
-//A while ,do-while 什么鬼
+//A while ,do-while 什么鬼,Go中没有
 //B 知道C/C++可以把答案打到屏幕上
 
 func main() {
-	for i:=0;i<5;i++{
-		if i==3{
+	for i := 0; i < 5; i++ {
+		if i == 3 {
 			//滚出，循环结束，后面i=4...都不执行
 			break
 		}
 	}
 
-	for i:=0;i<5;i++{
-		if i==2{
+	for i := 0; i < 5; i++ {
+		if i == 2 {
 			//跳出，循环继续执行后面的i=3...继续执行
 			continue
 		}
 	}
-	x:=1
-	for x<100{
+	x := 1
+	for x < 100 {
 		fmt.Println("来啊，快活啊~")
 		x++
 	}

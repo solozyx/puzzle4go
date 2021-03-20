@@ -12,7 +12,7 @@ import "fmt"
 //A 也没有长度
 
 func main() {
-	//s := make([]int)
+	//s := make([]int)   Missing len argument to make
 	//s := make([]int, 0)
 	//s := make([]int, 5, 10)
 	s := []int{1, 2, 3, 4, 5}
